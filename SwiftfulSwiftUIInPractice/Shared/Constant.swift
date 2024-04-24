@@ -9,5 +9,5 @@ import Foundation
 
 
 class Constant {
-    static var url = URL(string: "https://picsum.photos/600/600")
+    static var imageUrl = "https://picsum.photos/600/600"
 }

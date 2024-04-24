@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SwiftfulUI
 
 struct SpotifyHomeView: View {
     
     @State var currentUser: User? = nil
     @State var selectedCategory: Category? = nil
-    
+    @State var products: [Product] = []
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -19,17 +20,14 @@ struct SpotifyHomeView: View {
             ScrollView {
                 LazyVStack(pinnedViews: [.sectionHeaders]) {
                     Section {
-                        ScrollView {
-                            VStack {
-                                ForEach(0..<12) { _ in
-                                        Rectangle()
-                                        .foregroundStyle(.red)
-                                        .frame(width: 220, height: 220)
-                                }
-                            }
+                        recentsSection
+                        
+                        if let firstProduct = products.first {
+                            newReleaseSection(firstProduct)
                         }
+                        
                     } header: {
-                        header
+                        headerSection
                     }
                     
                 }
@@ -39,6 +37,8 @@ struct SpotifyHomeView: View {
         .task {
             do {
                 currentUser = try await DatabaseHelper().getUser().last
+                products = try await DatabaseHelper().getProduct()
+                products = Array(products.prefix(8))
             } catch {
                 
             }
@@ -46,7 +46,7 @@ struct SpotifyHomeView: View {
     }
     
     
-    var header: some View {
+    private  var headerSection: some View {
         HStack(spacing: 0) {
             Rectangle()
                 .overlay{
@@ -68,12 +68,34 @@ struct SpotifyHomeView: View {
                 }
                 .background(.black)
                 .padding(.horizontal, 16)
-               
+                
             }
         }
         .padding(.vertical, 24)
         .background(.black)
         .padding(.leading, 8)
+    }
+    
+    
+    private var recentsSection: some View {
+        VStack {
+            NonLazyVGrid(columns: 2, alignment: .center, spacing: 10, items: products) { product in
+                if let product = product {
+                    SpotifyRecentCellIView(title: product.title, imageUrl: product.firstImage)
+                }
+            }
+        }
+    }
+    
+    
+    private func newReleaseSection(_ firstProduct: Product) -> some View {
+        SpotifyNewReleaseCellView(
+            imageName: firstProduct.firstImage,
+            headline: firstProduct.brand,
+            subheadline: firstProduct.category,
+            title: firstProduct.title,
+            subtitle: firstProduct.description
+        )
     }
 }
 
