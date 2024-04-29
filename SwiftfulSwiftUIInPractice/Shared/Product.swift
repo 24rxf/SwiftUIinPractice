@@ -13,7 +13,7 @@ struct Products: Codable {
 }
 
 // MARK: - Product
-struct Product: Codable {
+struct Product: Codable, Identifiable {
     let id: Int
     let title, description: String
     let price: Int
@@ -26,4 +26,26 @@ struct Product: Codable {
     var firstImage: String {
         images.first ?? Constant.imageUrl
     }
+    
+    static var mock = Product(
+        id: 1234,
+        title: "Apple iPhone",
+        description: "Apple iPhone desc apple iPhone desc apple iPhone desc",
+        price: 500,
+        discountPercentage: 0,
+        rating: 5,
+        stock: 2,
+        brand: "Apple",
+        category: "HP",
+        thumbnail: Constant.imageUrl,
+        images: [Constant.imageUrl, Constant.imageUrl, Constant.imageUrl, Constant.imageUrl, Constant.imageUrl]
+    )
 }
+
+
+struct RowProduct: Identifiable {
+    let id = UUID().uuidString
+    let title: String
+    let products: [Product]
+}
+
