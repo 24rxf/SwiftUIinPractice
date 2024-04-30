@@ -8,24 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var users: [User] = []
+    
+    @Environment(\.router) var router
+    
     var body: some View {
-        ScrollView {
-            VStack {
-                ForEach(users) { user in
-                    Text(user.firstName)
+        
+        List {
+            Text("Spotify")
+                .asButton {
+                    router.showScreen(.fullScreenCover) { _ in
+                        SpotifyHomeView()
+                    }
                 }
-            }
         }
-        .task {
-            do {
-                users = try await DatabaseHelper().getUser()
-            } catch {
-                
-            }
-        }
-        .padding()
+        
     }
+       
 }
 
 #Preview {
