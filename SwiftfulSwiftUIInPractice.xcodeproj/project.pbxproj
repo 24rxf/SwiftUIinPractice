@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41688342C0A04A6003AF14E /* NetflixHeroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41688332C0A04A6003AF14E /* NetflixHeroCellView.swift */; };
+		C41688362C0A2B21003AF14E /* NetflixMovieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41688352C0A2B21003AF14E /* NetflixMovieCellView.swift */; };
 		C41AA09A2BDF4274003DAC9C /* ImageTitleRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41AA0992BDF4274003DAC9C /* ImageTitleRowCell.swift */; };
 		C41AA09C2BDF9DDF003DAC9C /* PlaylistHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41AA09B2BDF9DDF003DAC9C /* PlaylistHeaderCell.swift */; };
 		C41AA09E2BDFA221003DAC9C /* SpotifyPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41AA09D2BDFA221003DAC9C /* SpotifyPlaylistView.swift */; };
 		C41AA0A02BDFA4BF003DAC9C /* PlaylistDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41AA09F2BDFA4BF003DAC9C /* PlaylistDescriptionCell.swift */; };
 		C43470292BEFF68100DF7386 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43470282BEFF68100DF7386 /* CardView.swift */; };
 		C434702B2BEFF85000DF7386 /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434702A2BEFF85000DF7386 /* HeartView.swift */; };
+		C45C98532C08332F0055691B /* NetflixFilterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C98522C08332F0055691B /* NetflixFilterCellView.swift */; };
+		C45C98552C0835E80055691B /* NetflixFilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C98542C0835E80055691B /* NetflixFilterBarView.swift */; };
 		C472C87A2BD695CF00CE9C68 /* SpotifyRecentCellIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472C8792BD695CF00CE9C68 /* SpotifyRecentCellIView.swift */; };
 		C47B760C2BF19613002EAEE7 /* InterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B760B2BF19613002EAEE7 /* InterestView.swift */; };
 		C47B760E2BF1989D002EAEE7 /* InterestGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B760D2BF1989D002EAEE7 /* InterestGridView.swift */; };
 		C481EAF62BF2418B00A94C63 /* ProfileImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C481EAF52BF2418B00A94C63 /* ProfileImageCell.swift */; };
 		C481EAF82BF244B100A94C63 /* ChatPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C481EAF72BF244B100A94C63 /* ChatPreviewCell.swift */; };
 		C481EAFA2BF2484D00A94C63 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C481EAF92BF2484D00A94C63 /* ChatView.swift */; };
+		C4901D1D2C06D2A50029DDAA /* NetflixHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4901D1C2C06D2A50029DDAA /* NetflixHomeView.swift */; };
 		C49099EC2BD8974400399A9E /* SpotifyNewReleaseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49099EB2BD8974400399A9E /* SpotifyNewReleaseCellView.swift */; };
 		C4AAF1DA2BEFB1B60081A970 /* BumbleHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AAF1D92BEFB1B60081A970 /* BumbleHomeView.swift */; };
 		C4AAF1DE2BEFB3340081A970 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AAF1DD2BEFB3340081A970 /* FilterView.swift */; };
@@ -41,18 +46,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C41688332C0A04A6003AF14E /* NetflixHeroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixHeroCellView.swift; sourceTree = "<group>"; };
+		C41688352C0A2B21003AF14E /* NetflixMovieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixMovieCellView.swift; sourceTree = "<group>"; };
 		C41AA0992BDF4274003DAC9C /* ImageTitleRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleRowCell.swift; sourceTree = "<group>"; };
 		C41AA09B2BDF9DDF003DAC9C /* PlaylistHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderCell.swift; sourceTree = "<group>"; };
 		C41AA09D2BDFA221003DAC9C /* SpotifyPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlaylistView.swift; sourceTree = "<group>"; };
 		C41AA09F2BDFA4BF003DAC9C /* PlaylistDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDescriptionCell.swift; sourceTree = "<group>"; };
 		C43470282BEFF68100DF7386 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C434702A2BEFF85000DF7386 /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
+		C45C98522C08332F0055691B /* NetflixFilterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixFilterCellView.swift; sourceTree = "<group>"; };
+		C45C98542C0835E80055691B /* NetflixFilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixFilterBarView.swift; sourceTree = "<group>"; };
 		C472C8792BD695CF00CE9C68 /* SpotifyRecentCellIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRecentCellIView.swift; sourceTree = "<group>"; };
 		C47B760B2BF19613002EAEE7 /* InterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestView.swift; sourceTree = "<group>"; };
 		C47B760D2BF1989D002EAEE7 /* InterestGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestGridView.swift; sourceTree = "<group>"; };
 		C481EAF52BF2418B00A94C63 /* ProfileImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageCell.swift; sourceTree = "<group>"; };
 		C481EAF72BF244B100A94C63 /* ChatPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPreviewCell.swift; sourceTree = "<group>"; };
 		C481EAF92BF2484D00A94C63 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		C4901D1C2C06D2A50029DDAA /* NetflixHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixHomeView.swift; sourceTree = "<group>"; };
 		C49099EB2BD8974400399A9E /* SpotifyNewReleaseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyNewReleaseCellView.swift; sourceTree = "<group>"; };
 		C4AAF1D92BEFB1B60081A970 /* BumbleHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleHomeView.swift; sourceTree = "<group>"; };
 		C4AAF1DD2BEFB3340081A970 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
@@ -86,6 +96,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4901D192C06CEF10029DDAA /* Netflix */ = {
+			isa = PBXGroup;
+			children = (
+				C4901D1B2C06CF370029DDAA /* Core */,
+				C4901D1A2C06CF040029DDAA /* Components */,
+			);
+			path = Netflix;
+			sourceTree = "<group>";
+		};
+		C4901D1A2C06CF040029DDAA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C45C98522C08332F0055691B /* NetflixFilterCellView.swift */,
+				C45C98542C0835E80055691B /* NetflixFilterBarView.swift */,
+				C41688332C0A04A6003AF14E /* NetflixHeroCellView.swift */,
+				C41688352C0A2B21003AF14E /* NetflixMovieCellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C4901D1B2C06CF370029DDAA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C4901D1C2C06D2A50029DDAA /* NetflixHomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		C4AAF1D82BEFAF820081A970 /* Bumble */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +180,7 @@
 				C4AFDD082BD603A400AC599F /* Shared */,
 				C4AFDD192BD6452500AC599F /* Spotify */,
 				C4AAF1D82BEFAF820081A970 /* Bumble */,
+				C4901D192C06CEF10029DDAA /* Netflix */,
 				C4AFDCFB2BD6022F00AC599F /* Assets.xcassets */,
 				C4AFDCFD2BD6022F00AC599F /* Preview Content */,
 			);
@@ -294,6 +333,7 @@
 				C49099EC2BD8974400399A9E /* SpotifyNewReleaseCellView.swift in Sources */,
 				C41AA09E2BDFA221003DAC9C /* SpotifyPlaylistView.swift in Sources */,
 				C481EAF82BF244B100A94C63 /* ChatPreviewCell.swift in Sources */,
+				C41688342C0A04A6003AF14E /* NetflixHeroCellView.swift in Sources */,
 				C4AAF1DA2BEFB1B60081A970 /* BumbleHomeView.swift in Sources */,
 				C481EAFA2BF2484D00A94C63 /* ChatView.swift in Sources */,
 				C481EAF62BF2418B00A94C63 /* ProfileImageCell.swift in Sources */,
@@ -302,6 +342,7 @@
 				C4AFDD0E2BD6058E00AC599F /* DatabaseHelper.swift in Sources */,
 				C4AFDD1D2BD648A500AC599F /* SpotifyHomeView.swift in Sources */,
 				C41AA09A2BDF4274003DAC9C /* ImageTitleRowCell.swift in Sources */,
+				C45C98552C0835E80055691B /* NetflixFilterBarView.swift in Sources */,
 				C4AFDD0C2BD603C900AC599F /* ImageLoaderView.swift in Sources */,
 				C47B760E2BF1989D002EAEE7 /* InterestGridView.swift in Sources */,
 				C4AFDCF82BD6022D00AC599F /* SwiftfulSwiftUIInPracticeApp.swift in Sources */,
@@ -309,10 +350,13 @@
 				C4AFDD0A2BD603B100AC599F /* Constant.swift in Sources */,
 				C43470292BEFF68100DF7386 /* CardView.swift in Sources */,
 				C4AFDD102BD6060700AC599F /* Product.swift in Sources */,
+				C4901D1D2C06D2A50029DDAA /* NetflixHomeView.swift in Sources */,
 				C434702B2BEFF85000DF7386 /* HeartView.swift in Sources */,
 				C4B594412BE0A50C004AFBA1 /* SongRowCell.swift in Sources */,
 				C47B760C2BF19613002EAEE7 /* InterestView.swift in Sources */,
 				C4AAF1DE2BEFB3340081A970 /* FilterView.swift in Sources */,
+				C45C98532C08332F0055691B /* NetflixFilterCellView.swift in Sources */,
+				C41688362C0A2B21003AF14E /* NetflixMovieCellView.swift in Sources */,
 				C41AA0A02BDFA4BF003DAC9C /* PlaylistDescriptionCell.swift in Sources */,
 				C4AFDD122BD6070100AC599F /* Users.swift in Sources */,
 			);

@@ -16,16 +16,21 @@ struct Products: Codable {
 struct Product: Codable, Identifiable {
     let id: Int
     let title, description: String
-    let price: Int
+    let price: Double
     let discountPercentage, rating: Double
     let stock: Int
-    let brand, category: String
+    let brand: String?
+    let category: String
     let thumbnail: String
     let images: [String]
     
     var firstImage: String {
         images.first ?? Constant.imageUrl
     }
+    
+    let recentlyAdded: Bool = {
+        return Int.random(in: 0...4) == 1
+    }()
     
     static var mock = Product(
         id: 1234,

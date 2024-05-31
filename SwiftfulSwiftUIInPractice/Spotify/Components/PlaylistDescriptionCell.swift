@@ -22,7 +22,7 @@ struct PlaylistDescriptionCell: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(descriptionText)
-                .foregroundStyle(.spotifyLightGrey)
+                .foregroundStyle(.spotifyLightGray)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             madeForYouSection
@@ -31,7 +31,7 @@ struct PlaylistDescriptionCell: View {
         }
         .font(.callout)
         .fontWeight(.medium)
-        .foregroundStyle(.spotifyLightGrey)
+        .foregroundStyle(.spotifyLightGray)
     }
     
     var madeForYouSection: some View {

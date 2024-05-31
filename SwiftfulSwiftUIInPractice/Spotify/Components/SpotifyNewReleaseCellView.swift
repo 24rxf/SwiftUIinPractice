@@ -25,7 +25,7 @@ struct SpotifyNewReleaseCellView: View {
                     .clipShape(Circle())
                 VStack(alignment: .leading) {
                     Text(headline)
-                        .foregroundStyle(.spotifyLightGrey)
+                        .foregroundStyle(.spotifyLightGray)
                         .font(.callout)
                     
                     Text(subtitle)
@@ -48,7 +48,7 @@ struct SpotifyNewReleaseCellView: View {
                         .fontWeight(.semibold)
                         .foregroundStyle(.spotifyWhite)
                     Text(subtitle)
-                        .foregroundStyle(.spotifyLightGrey)
+                        .foregroundStyle(.spotifyLightGray)
                     Spacer()
                     
                     HStack {

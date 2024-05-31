@@ -57,7 +57,7 @@ struct SpotifyHomeView: View {
             
             let brands = products.map { $0.brand }
             for brand in brands {
-                rowProducts.append(RowProduct(title: brand, products: products))
+                rowProducts.append(RowProduct(title: brand ?? "", products: products))
             }
         } catch {
             
@@ -115,7 +115,7 @@ struct SpotifyHomeView: View {
     private func newReleaseSection(_ firstProduct: Product) -> some View {
         SpotifyNewReleaseCellView(
             imageName: firstProduct.firstImage,
-            headline: firstProduct.brand,
+            headline: firstProduct.brand ?? "",
             subheadline: firstProduct.category,
             title: firstProduct.title,
             subtitle: firstProduct.description

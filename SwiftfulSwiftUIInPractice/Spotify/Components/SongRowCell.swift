@@ -27,7 +27,7 @@ struct SongRowCell: View {
                 
                 Text(subtitle)
                     .font(.callout)
-                    .foregroundStyle(.spotifyLightGrey)
+                    .foregroundStyle(.spotifyLightGray)
             }
             .lineLimit(2)
             .frame(maxWidth: .infinity, alignment: .leading)

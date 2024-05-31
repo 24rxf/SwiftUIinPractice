@@ -21,7 +21,7 @@ struct ImageTitleRowCell: View {
             
             Text(title)
                 .font(.callout)
-                .foregroundStyle(.spotifyLightGrey)
+                .foregroundStyle(.spotifyLightGray)
                 .lineLimit(2)
             
         }

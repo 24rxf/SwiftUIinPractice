@@ -40,7 +40,7 @@ struct SpotifyPlaylistView: View {
                         SongRowCell(
                             image: product.firstImage,
                             title: product.title,
-                            subtitle: product.brand
+                            subtitle: product.brand ?? ""
                         )
                         .asButton {
                             router.showScreen(.push) { _ in
@@ -75,7 +75,7 @@ struct SpotifyPlaylistView: View {
             Image(systemName: "chevron.left")
                 .font(.title3)
                 .padding(10)
-                .background(showHeader ? Color.spotifyBlack.opacity(0.001) : Color.spotifyLightGrey.opacity(0.7))
+                .background(showHeader ? Color.spotifyBlack.opacity(0.001) : Color.spotifyLightGray.opacity(0.7))
                 .clipShape(Circle())
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .asButton {
