@@ -10,7 +10,7 @@ import SwiftUI
 struct NetflixFilterBarView: View {
     
     let filter = ["Comedy", "Horror", "Action", "Korean"]
-    @State var selectedFilter: String? = "Comedy"
+    @State var selectedFilter: String? = nil
     var body: some View {
         
         HStack(spacing: 0){
@@ -26,6 +26,7 @@ struct NetflixFilterBarView: View {
                             selectedFilter = nil
                         }
                     }
+                    .padding(.leading, 8)
             }
             
             
@@ -55,7 +56,6 @@ struct NetflixFilterBarView: View {
                 }.padding(8)
             }
         }
-//        .background(.red)
         .foregroundStyle(.netflixLightGray)
     }
 }
